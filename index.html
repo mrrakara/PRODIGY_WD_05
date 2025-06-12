@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Get real-time weather updates with location search, temperature, wind speed, and animated icons. Stylish, responsive weather app.">
+
+  <title>Weather Check | Rahul Ji Ara</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/thunderstorm.jpeg" type="image/x-icon">
+</head>
+
+<body class="flex">
+
+  <div class="container flex" id="weather-container">
+    <form class="searchbox flex" onsubmit="userInput(event)">
+      <input type="search" name="search" id="search" placeholder="search your city..." required autofocus>
+      <button type="submit" class="submit-btn flex" name="search button"><img src="img/search icon.png"
+          alt="search button"></button>
+    </form>
+
+    <div class="weatherbox flex">
+      <div class="flex">
+        <div class="weather-icon flex">
+          <img src="" alt="weather icon" id="weather-icon-img">
+        </div>
+        <div id="weather-type" class="flex">Mist</div>
+      </div>
+
+      <div class="flex">
+        <div id="temp" class="flex"></div>
+        <div id="date" class="flex">24-may-2025</div>
+      </div>
+
+      <section class="flex location">
+        <div id="city" class="flex"></div>
+        <div id="country" class="flex"></div>
+      </section>
+    </div>
+
+    <footer class="footer flex">
+
+      <div class="footer-card flex">
+        <p class="flex">Latitude</p>
+        <div id="lat" class="flex"></div>
+      </div>
+      <div class="footer-card flex">
+        <p class="flex">Longitude</p>
+        <div id="lon" class="flex"></div>
+      </div>
+      <div class="footer-card flex">
+        <p class="flex">Wind</p>
+        <div id="wind-speed" class="flex"></div>
+      </div>
+      <div class="footer-card flex">
+        <p class="flex">Temp</p>
+        <div id="avg-temp" class="flex"></div>
+      </div>
+      <div class="footer-card flex">
+        <p class="flex">Time</p>
+        <div class="clock flex">
+          <p id="time" class="flex"></p>
+          <p id="time-ampm" class="flex"></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="about-btn">
+    <a href="https://github.com/rahuljiara" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/128/2504/2504911.png" alt="developer image">
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
